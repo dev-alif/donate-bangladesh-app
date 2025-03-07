@@ -5,12 +5,12 @@ document.getElementById('btn-donation-1')
         const textFieldValue = parseFloat(getTextFieldValueById('total-donation-amount-1'));
         const mainBalance = parseFloat(getTextFieldValueById('main-balance'));
 
-        if(isNaN(inputFieldValue)){
+        if (isNaN(inputFieldValue)) {
             alert('Please enter correct number.');
             return;
         }
 
-        if(inputFieldValue < 0){
+        if (inputFieldValue < 0) {
             alert('Please enter positive number.');
             return;
         }
@@ -33,9 +33,9 @@ document.getElementById('btn-donation-1')
 
         const div = document.createElement('div');
         div.innerHTML = `
-            <div>
-                <h3>${inputFieldValue} Taka is Donated for ${donationTitle}</h3>
-                <p>Date: ${time}</p>
+            <div class="border border-[#F3F3F3] rounded-xl p-8 space-y-4">
+                <h3 class="font-bold">${inputFieldValue} Taka is Donated for ${donationTitle}</h3>
+                <p class="text-gray-500">Date: ${time}</p>
             </div>
         `;
 
@@ -49,12 +49,12 @@ document.getElementById('btn-donation-2')
         const textFieldValue = parseFloat(getTextFieldValueById('total-donation-amount-2'));
         const mainBalance = parseFloat(getTextFieldValueById('main-balance'));
 
-        if(isNaN(inputFieldValue)){
+        if (isNaN(inputFieldValue)) {
             alert('Please enter correct number.');
             return;
         }
 
-        if(inputFieldValue < 0){
+        if (inputFieldValue < 0) {
             alert('Please enter positive number.');
             return;
         }
@@ -77,9 +77,9 @@ document.getElementById('btn-donation-2')
 
         const div = document.createElement('div');
         div.innerHTML = `
-            <div>
-                <h3>${inputFieldValue} Taka is Donated for ${donationTitle}</h3>
-                <p>Date: ${time}</p>
+            <div class="border border-[#F3F3F3] rounded-xl p-8 space-y-4">
+                <h3 class="font-bold">${inputFieldValue} Taka is Donated for ${donationTitle}</h3>
+                <p class="text-gray-500">Date: ${time}</p>
             </div>
         `;
 
@@ -93,12 +93,12 @@ document.getElementById('btn-donation-3')
         const textFieldValue = parseFloat(getTextFieldValueById('total-donation-amount-3'));
         const mainBalance = parseFloat(getTextFieldValueById('main-balance'));
 
-        if(isNaN(inputFieldValue)){
+        if (isNaN(inputFieldValue)) {
             alert('Please enter correct number.');
             return;
         }
 
-        if(inputFieldValue < 0){
+        if (inputFieldValue < 0) {
             alert('Please enter positive number.');
             return;
         }
@@ -121,9 +121,9 @@ document.getElementById('btn-donation-3')
 
         const div = document.createElement('div');
         div.innerHTML = `
-            <div>
-                <h3>${inputFieldValue} Taka is Donated for ${donationTitle}</h3>
-                <p>Date: ${time}</p>
+            <div class="border border-[#F3F3F3] rounded-xl p-8 space-y-4">
+                <h3 class="font-bold">${inputFieldValue} Taka is Donated for ${donationTitle}</h3>
+                <p class="text-gray-500">Date: ${time}</p>
             </div>
         `;
 
@@ -132,14 +132,14 @@ document.getElementById('btn-donation-3')
 
 
 // section buttons
-document.getElementById('btn-donate').addEventListener('click', function(){
+document.getElementById('btn-donate').addEventListener('click', function () {
     showSection('donations-section');
 
     document.getElementById('btn-donate').classList.add('bg-[#B4F461]');
     document.getElementById('btn-history').classList.remove('bg-[#B4F461]');
 });
 
-document.getElementById('btn-history').addEventListener('click', function(){
+document.getElementById('btn-history').addEventListener('click', function () {
     showSection('history-section');
 
     document.getElementById('btn-history').classList.add('bg-[#B4F461]');
